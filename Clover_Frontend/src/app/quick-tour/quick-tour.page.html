@@ -1,9 +1,72 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>quick-tour</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>QUICK TOUR</ion-title>
+    </ion-toolbar>
+  <ion-header class="ion-no-border">
+   </ion-header>
 
-<ion-content>
+<ion-content fullscreen class="ion-padding" scroll-y="false">
+    <ion-slides>
+      <ion-slide>
+        <div class="slide">
+          <img class="logo" src="assets/icon/logo-tour.png"/>
+          <img class="search" src="assets/images/search.png"/>
+          <h2>Joining a climate hub is easy!<br>
+            Simply enter the table number in<br>
+            the search bar and tap your<br>
+            table to join!</h2>
+            <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="slide1">
+        <b>Modifying your climate settings.</b>
+        <h3>This is the Home Page. <br>
+          From here, you can adjust the<br>
+           climate settings<br>
+            of your current hub using <br>
+            the sliders.</h3>
+            <img class="presset" src="assets/images/presset.png"/>
+          </div>
+        </ion-slide>
+
+      <ion-slide>
+        <div class="slide2">
+          <b>Selecting a climate preset.</b>
+          <img class="open" src="assets/images/open.png"/>
+          <h4>By tapping this icon, you can<br>
+             select which climate preset<br>
+             you would like at the current time.<br>
+              The three default presets are<br>
+               Hot, Cold and Neutral. <br>
+               You can cycle through these 3,<br>
+                or create your own!</h4>
+                <h5>Please note, changes made to<br>
+                   a climate preset may take up <br>
+                   to an hour to have affect.</h5>
+            </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide3">
+          <b>Need help?</b>
+          <h6>Burger menu</h6>
+          <img class="burger" src="assets/images/burger-menu.png"/>
+          <h1>Confused about the app and it’s <br>
+            features? Just tap the burger icon in<br>
+            the top left to get help!<br></h1>
+
+            <h1>From here, you can find <br>
+            answers to the most frequently <br>
+            asked questions, and find solutions<br>
+             to commonly encountered issues.<br></h1>
+            
+           <h1> You can also view our <br>
+            terms and conditions, and more!</h1>
+            <ion-button routerLink="/search"  class="ok" expand="full" size="large">GOT IT!</ion-button>
+          </div>
+          
+      </ion-slide>
+ </ion-slides>
 
 </ion-content>
