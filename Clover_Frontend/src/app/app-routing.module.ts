@@ -22,6 +22,14 @@ const routes: Routes = [
     path: 'tour-start',
     loadChildren: () => import('./tour-start/tour-start.module').then( m => m.TourStartPageModule)
   },
+  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: 'quick-tour',
+    loadChildren: () => import('./quick-tour/quick-tour.module').then( m => m.QuickTourPageModule)
+  },
 
 ];
 
