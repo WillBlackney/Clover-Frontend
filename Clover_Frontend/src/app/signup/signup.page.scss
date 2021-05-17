@@ -47,3 +47,12 @@ ion-toolbar {
       margin-top: 40px;
     }
   }
+
+  ion-menu-button {
+    color: white;
+    float: left;
+    width: unset;
+    font-size: 2em;
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+  }
