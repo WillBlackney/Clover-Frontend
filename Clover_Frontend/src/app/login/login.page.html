@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    </ion-toolbar>
+  <ion-header class="ion-no-border">
+   </ion-header>
+  
+  <ion-content fullscreen= "true">
+    <div id="header">
+      <img src="assets/icon/logo+.png" />
+    </div>
+    <form id="form">
+      <app-input placeholder="Email">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+      </app-input>
+      <app-input type="password" placeholder="Password">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      </app-input>
+      <ion-button  class="pass" type="button" expand="block" color="medium" fill="clear" slot="end">Forgot password?
+      </ion-button>
+      <ion-button expand="full" size="large">LOGIN</ion-button>
+    </form>
+    <ion-button routerLink="/signup" type="button" expand="block" color="medium" fill="clear">Don't have an account? Sign up here
+    </ion-button>
+    
+  <ion-button fill="clear" class="googlebtn ion-no-padding">
+     <img class="smt" src="assets/images/google.png">
+  </ion-button>
+  <ion-button class="smt" fill="clear" class="fbbtn ion-no-padding">
+    <img src="assets/images/facebook.png">
+ </ion-button>
+</ion-content>

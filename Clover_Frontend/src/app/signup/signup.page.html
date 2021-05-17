@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    </ion-toolbar>
+  <ion-header class="ion-no-border">
+   </ion-header>
+
+<ion-content fullscreen="true">
+  <div id="header">
+    <img src="assets/icon/logo+.png" />
+  </div>
+  <h1>Create your account!</h1>
+
+  <form id="form">
+    <app-input placeholder="Email"></app-input>
+    <app-input type="password" placeholder="Password"></app-input>
+    <app-input type="password" placeholder=" Confirm Password"></app-input>
+    <ion-button expand="full" size="large" >SIGN UP</ion-button>
+  </form>
+  <ion-row style="height: 50px"></ion-row>
+  <ion-button routerLink="/login" type="button" expand="block" color="medium" fill="clear">Already have an account? Login here!
+  </ion-button>
+</ion-content>
