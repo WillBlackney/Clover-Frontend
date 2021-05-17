@@ -5,12 +5,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content  fullscreen >
+<ion-content  fullscreen scrollX="false" scrollY="false" >
 <ion-card>
     <ion-card-header>
       <ion-card-title>Outdoor climate</ion-card-title>
     </ion-card-header>
-  <ion-row>
+  <ion-row class="row">
       <ion-col>
         <ion-card-content>Temperature</ion-card-content>
       </ion-col>
@@ -18,8 +18,7 @@
         <ion-card-content>30° C</ion-card-content>
       </ion-col>
    </ion-row>
-
-   <ion-row>
+ <ion-row >
     <ion-col>
       <ion-card-content>
         Humidity
@@ -42,7 +41,7 @@
       <ion-card-title>Indoor climate</ion-card-title>
     </ion-card-header>
 
-      <ion-row>
+      <ion-row class="row1">
         <ion-col>
           <ion-card-content>
             Temperature
@@ -56,7 +55,7 @@
         </ion-col>
      </ion-row>
 
-     <ion-row>
+     <ion-row class="row1">
       <ion-col>
         <ion-card-content>
           Ventilation
@@ -90,17 +89,30 @@
 
   <ion-card>
     <ion-grid>
-
     <ion-card-header>
-      <ion-card-title>Preset</ion-card-title>
+     <ion-card-title>Preset</ion-card-title>
+     <ion-fab>
+      <ion-fab-button color="secondary">
+           <ion-icon name="star-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+          <div class="fab-backdrop"></div>
+          <ion-fab-button>N</ion-fab-button>
+        </ion-fab-list>
+        <div class="fab-backdrop"></div>
+        <ion-fab-list side="start">
+          <ion-fab-button>C</ion-fab-button>
+        </ion-fab-list>
+        <div class="fab-backdrop"></div>
+        <ion-fab-list side="end">
+           <ion-fab-button>H</ion-fab-button>
+         </ion-fab-list>
+       
+     
+      </ion-fab>
     </ion-card-header>
-
-
-
-
-
-     <ion-fab class="ion-align-items-center">
-     <ion-row>
+    <!-- <ion-fab class="ion-align-items-center">
+     <ion-row class="row2">
       <ion-col>
        <ion-fab-button color="secondary">
           <ion-icon name="star-outline"></ion-icon>
@@ -116,31 +128,24 @@
         </ion-fab-list>
       </ion-col>
     </ion-row>
-     </ion-fab>
-
-
-
-    
-    <ion-row>
+     </ion-fab> -->
+      <ion-row class="row2">
       <ion-col>
         <ion-card-content>
           Temperature
         </ion-card-content>
       </ion-col>
-
-      <ion-col>
-        <ion-card-content style="text-align:right;">
+       <ion-card-content style="text-align:right;">
           30° c
         </ion-card-content>
-      </ion-col>
-   </ion-row>
-
+    
+    </ion-row>
     <ion-item>
       <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
 
-    <ion-row>
+    <ion-row >
       <ion-col>
         <ion-card-content>
           Ventilation
@@ -172,6 +177,7 @@
          </ion-card-content>
        </ion-col>
      </ion-row>
+   
 
     <ion-item>
       <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">

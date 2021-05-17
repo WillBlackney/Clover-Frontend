@@ -15,6 +15,50 @@ ion-menu-button {
 ion-fab{
   margin-left: 38%;
 }
+.row{
+  height: 20px;
+}
+.row1{
+  height: 20px;
+}
+.row2{
+  padding: 0%;
+}
+ion-card-content{
+ padding: 0%;
+
+}
+// ion-fab{
+//   margin-top: 0px !important;
+//   margin-left: 2px;
+  
+// }
+.fab{
+  margin-left: 0%;
+  margin-top: 0%;
+
+}
+ion-card-title{
+  width: unset;
+}
+ion-fab-button{
+  margin-left: 0%;
+}
+ion-fab{
+  margin-left: -8%;
+  margin-right: -50%;
+ 
+}
+ion-fab .fab-list-active .fab-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(100, 100, 100, 0.5);
+}
+
+
 
 
 
