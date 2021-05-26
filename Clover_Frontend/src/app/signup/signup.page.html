@@ -4,17 +4,43 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content scrollY = "false" scrollX = "false">
+<ion-content  fullscreen class="ion-padding">
   <div id="header">
     <img src="assets/icon/logo+.png" />
   </div>
   <h1>Create your account!</h1>
 
-  <form id="form">
-    <app-input placeholder="Email"></app-input>
-    <app-input type="password" placeholder="Password"></app-input>
-    <app-input type="password" placeholder=" Confirm Password"></app-input>
-    <ion-button expand="full" size="large" >SIGN UP</ion-button>
+  <form id="form" [formGroup]="validations_form" (ngSubmit)="tryRegister(validations_form.value)">
+    <app-input placeholder="Email" formControlName="email"></app-input>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.email">
+        <div class="error-message"
+          *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <app-input type="password" placeholder="Password" formControlName="password" required></app-input>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.password">
+        <div class="error-message"
+          *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <app-input type="password" placeholder=" Confirm Password" formControlName="password" required></app-input>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.password">
+        <div class="error-message"
+          *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <ion-button expand="full" size="large" type="submit" >SIGN UP</ion-button>
+    <label class="error-message">{{errorMessage}}</label>
+    <label class="success-message">{{successMessage}}</label>
   </form>
   <ion-row style="height: 50px"></ion-row>
   <ion-button routerLink="/login" type="button" expand="block" color="medium" fill="clear">Already have an account? Login here!
