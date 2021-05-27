@@ -50,7 +50,7 @@
 
         <ion-col>
           <ion-card-content style="text-align:right;">
-            24° c
+            24° C
           </ion-card-content>
         </ion-col>
      </ion-row>
@@ -93,7 +93,7 @@
      <ion-card-title>Preset</ion-card-title>
      <ion-fab>
       <ion-fab-button color="secondary">
-           <ion-icon name="star-outline"></ion-icon>
+           <ion-icon name="options-outline"></ion-icon>
         </ion-fab-button>
         <ion-fab-list side="top">
           <div class="fab-backdrop"></div>
@@ -111,36 +111,19 @@
      
       </ion-fab>
     </ion-card-header>
-    <!-- <ion-fab class="ion-align-items-center">
-     <ion-row class="row2">
-      <ion-col>
-       <ion-fab-button color="secondary">
-          <ion-icon name="star-outline"></ion-icon>
-       </ion-fab-button>
-       <ion-fab-list side="top">
-         <ion-fab-button>N</ion-fab-button>
-       </ion-fab-list>
-       <ion-fab-list side="start">
-         <ion-fab-button>C</ion-fab-button>
-       </ion-fab-list>
-       <ion-fab-list side="end">
-          <ion-fab-button>H</ion-fab-button>
-        </ion-fab-list>
-      </ion-col>
-    </ion-row>
-     </ion-fab> -->
-      <ion-row class="row2">
+
+      <ion-row class="ion-align-items-center">
       <ion-col>
         <ion-card-content>
           Temperature
         </ion-card-content>
       </ion-col>
        <ion-card-content style="text-align:right;">
-          30° c
-        </ion-card-content>
+        22° C
+</ion-card-content>
     
     </ion-row>
-    <ion-item>
+    <ion-item lines="none">
       <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
@@ -159,7 +142,7 @@
       </ion-col>
    </ion-row>
 
-    <ion-item>
+    <ion-item lines="none">
       <ion-range min="1500" max="2000" step="150" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
@@ -179,7 +162,7 @@
      </ion-row>
    
 
-    <ion-item>
+    <ion-item lines="none">
       <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
@@ -192,7 +175,7 @@
 
 
 <ion-footer><ion-toolbar>
-  <ion-tab-button class="exit" tab="schedule" slot="start" routerLink="/login">
+  <ion-tab-button class="exit" tab="schedule" slot="start" (click)="showConfirm()">
     <ion-icon color="secondary" name="log-out-outline"></ion-icon>
     <ion-label>Exit</ion-label>
   </ion-tab-button>

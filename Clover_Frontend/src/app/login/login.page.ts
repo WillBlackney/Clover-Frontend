@@ -9,6 +9,8 @@ import { AuthenticationService } from '../services/authentication.service';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
+
+
 export class LoginPage implements OnInit {
   validations_form: FormGroup;
   errorMessage: string = '';

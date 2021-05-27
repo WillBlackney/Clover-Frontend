@@ -24,9 +24,13 @@ ion-fab{
 .row2{
   padding: 0%;
 }
+.new{
+  padding-left: 0%;
+}
 ion-card-content{
  padding: 0%;
-
+ padding-left: 15%;
+ padding-right: 15%;
 }
 // ion-fab{
 //   margin-top: 0px !important;
@@ -57,7 +61,11 @@ ion-fab .fab-list-active .fab-backdrop {
   left: 0;
   background: rgba(100, 100, 100, 0.5);
 }
-
+.values{
+  padding: 0%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
 
 
 
