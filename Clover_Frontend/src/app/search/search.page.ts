@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable, throwError} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {ActivatedRoute, Router} from '@angular/router';
 
@@ -67,6 +67,9 @@ export class SearchPage implements OnInit {
        // TO DO: CODE FOR HANDLING ROUTE TO HOME PAGE
     }
     else{
+      
+      let errorMessage = 'Not found the table!';
+      return throwError(errorMessage);
       // didnt find a match, show error screen
       console.log('foundMatch = false, do error pop up');
 
