@@ -6,44 +6,28 @@
 </ion-header>
 
 
-<ion-content  fullscreen >
+<ion-content scrollY = "false" scrollX = "false" >
 
     <div id="header">
       <img src="assets/icon/logo+.png" />
     </div>
 
-    <form id="form" [formGroup]="validations_form" (ngSubmit)="loginUser(validations_form.value)">
-      <app-input placeholder="Email" formControlName="email">
+    <form id="form">
+      <app-input placeholder="Email">
         <ion-icon name="person-outline" slot="start"></ion-icon>
       </app-input>
-      <div class="validation-errors">
-        <ng-container *ngFor="let validation of validation_messages.email">
-          <div class="error-message"
-            *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
-            {{ validation.message }}
-          </div>
-        </ng-container>
-      </div>
 
-      <app-input type="password" placeholder="Password" formControlName="password" required>
+      <app-input type="password" placeholder="Password">
         <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
       </app-input>
-      <div class="validation-errors">
-        <ng-container *ngFor="let validation of validation_messages.password">
-          <div class="error-message"
-            *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
-            {{ validation.message }}
-          </div>
-        </ng-container>
-      </div>
 
       <ion-button  class="pass" type="button" expand="block" color="medium" fill="clear" slot="end">Forgot password?
       </ion-button>
-      <ion-button expand="full" size="large" type="submit" (click)="login()">LOGIN</ion-button>
+      <ion-button routerLink="/tour-start" expand="full" size="large">LOGIN</ion-button>
 
     </form>
 
-    <ion-button (click)="goToRegisterPage()" type="button" expand="block" color="medium" fill="clear">Don't have an account? Sign up here
+    <ion-button routerLink="/signup" type="button" expand="block" color="medium" fill="clear">Don't have an account? Sign up here
     </ion-button>
     <ion-row class="ha">
       <ion-label color="medium">

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -14,7 +14,6 @@ import { InputModule } from '../components/input/input.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ReactiveFormsModule,
     InputModule,
     LoginPageRoutingModule,
   ],
