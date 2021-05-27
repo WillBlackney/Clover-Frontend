@@ -1,0 +1,525 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Clover_Frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Clover_Frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HomePage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/home.page.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>home.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>home.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/home/home.page.ts:8</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;home.page.html&#x27;,
+  styleUrls: [&#x27;home.page.scss&#x27;],
+})
+export class HomePage {
+
+  constructor() {}
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-header [translucent]&#x3D;&quot;true&quot;&gt;
+  &lt;ion-toolbar color&#x3D;&quot;primary&quot;&gt;
+    &lt;ion-menu-button menu&#x3D;&quot;main-menu&quot;&gt;&lt;/ion-menu-button&gt;
+    &lt;ion-title&gt;Area/Roskilde&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content  fullscreen scrollX&#x3D;&quot;false&quot; scrollY&#x3D;&quot;false&quot; &gt;
+&lt;ion-card&gt;
+    &lt;ion-card-header&gt;
+      &lt;ion-card-title&gt;Outdoor climate&lt;/ion-card-title&gt;
+    &lt;/ion-card-header&gt;
+  &lt;ion-row class&#x3D;&quot;row&quot;&gt;
+      &lt;ion-col&gt;
+        &lt;ion-card-content&gt;Temperature&lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+    &lt;ion-col&gt;
+        &lt;ion-card-content&gt;30° C&lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+   &lt;/ion-row&gt;
+ &lt;ion-row &gt;
+    &lt;ion-col&gt;
+      &lt;ion-card-content&gt;
+        Humidity
+      &lt;/ion-card-content&gt;
+    &lt;/ion-col&gt;
+
+    &lt;ion-col&gt;
+      &lt;ion-card-content&gt;
+        60%
+       &lt;/ion-card-content&gt;
+     &lt;/ion-col&gt;
+   &lt;/ion-row&gt;
+
+  &lt;/ion-card&gt;
+
+  &lt;ion-card&gt;
+    &lt;ion-grid&gt;
+
+    &lt;ion-card-header&gt;
+      &lt;ion-card-title&gt;Indoor climate&lt;/ion-card-title&gt;
+    &lt;/ion-card-header&gt;
+
+      &lt;ion-row class&#x3D;&quot;row1&quot;&gt;
+        &lt;ion-col&gt;
+          &lt;ion-card-content&gt;
+            Temperature
+          &lt;/ion-card-content&gt;
+        &lt;/ion-col&gt;
+
+        &lt;ion-col&gt;
+          &lt;ion-card-content style&#x3D;&quot;text-align:right;&quot;&gt;
+            24° C
+          &lt;/ion-card-content&gt;
+        &lt;/ion-col&gt;
+     &lt;/ion-row&gt;
+
+     &lt;ion-row class&#x3D;&quot;row1&quot;&gt;
+      &lt;ion-col&gt;
+        &lt;ion-card-content&gt;
+          Ventilation
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+
+      &lt;ion-col&gt;
+        &lt;ion-card-content style&#x3D;&quot;text-align:right;&quot;&gt;
+          3
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+   &lt;/ion-row&gt;
+
+    &lt;ion-row&gt;
+     &lt;ion-col&gt;
+       &lt;ion-card-content&gt;
+         Humidity
+       &lt;/ion-card-content&gt;
+     &lt;/ion-col&gt;
+
+     &lt;ion-col&gt;
+       &lt;ion-card-content style&#x3D;&quot;text-align:right;&quot;&gt;
+         60%
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+    &lt;/ion-row&gt;
+
+    &lt;/ion-grid&gt;
+  &lt;/ion-card&gt;
+
+
+  &lt;ion-card&gt;
+    &lt;ion-grid&gt;
+    &lt;ion-card-header&gt;
+     &lt;ion-card-title&gt;Preset&lt;/ion-card-title&gt;
+     &lt;ion-fab&gt;
+      &lt;ion-fab-button color&#x3D;&quot;secondary&quot;&gt;
+           &lt;ion-icon name&#x3D;&quot;star-outline&quot;&gt;&lt;/ion-icon&gt;
+        &lt;/ion-fab-button&gt;
+        &lt;ion-fab-list side&#x3D;&quot;top&quot;&gt;
+          &lt;div class&#x3D;&quot;fab-backdrop&quot;&gt;&lt;/div&gt;
+          &lt;ion-fab-button&gt;N&lt;/ion-fab-button&gt;
+        &lt;/ion-fab-list&gt;
+        &lt;div class&#x3D;&quot;fab-backdrop&quot;&gt;&lt;/div&gt;
+        &lt;ion-fab-list side&#x3D;&quot;start&quot;&gt;
+          &lt;ion-fab-button&gt;C&lt;/ion-fab-button&gt;
+        &lt;/ion-fab-list&gt;
+        &lt;div class&#x3D;&quot;fab-backdrop&quot;&gt;&lt;/div&gt;
+        &lt;ion-fab-list side&#x3D;&quot;end&quot;&gt;
+           &lt;ion-fab-button&gt;H&lt;/ion-fab-button&gt;
+         &lt;/ion-fab-list&gt;
+       
+     
+      &lt;/ion-fab&gt;
+    &lt;/ion-card-header&gt;
+
+      &lt;ion-row class&#x3D;&quot;ion-align-items-center&quot;&gt;
+      &lt;ion-col&gt;
+        &lt;ion-card-content&gt;
+          Temperature
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+       &lt;ion-card-content style&#x3D;&quot;text-align:right;&quot;&gt;
+        22° C
+&lt;/ion-card-content&gt;
+    
+    &lt;/ion-row&gt;
+    &lt;ion-item&gt;
+      &lt;ion-range min&#x3D;&quot;1500&quot; max&#x3D;&quot;2000&quot; step&#x3D;&quot;100&quot; value&#x3D;&quot;1400&quot; snaps color&#x3D;&quot;danger&quot;&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+
+    &lt;ion-row &gt;
+      &lt;ion-col&gt;
+        &lt;ion-card-content&gt;
+          Ventilation
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+
+      &lt;ion-col&gt;
+        &lt;ion-card-content style&#x3D;&quot;text-align:right;&quot;&gt;
+          3
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+   &lt;/ion-row&gt;
+
+    &lt;ion-item&gt;
+      &lt;ion-range min&#x3D;&quot;1500&quot; max&#x3D;&quot;2000&quot; step&#x3D;&quot;150&quot; value&#x3D;&quot;1400&quot; snaps color&#x3D;&quot;danger&quot;&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+
+    &lt;ion-row&gt;
+      &lt;ion-col&gt;
+        &lt;ion-card-content&gt;
+          Humidity
+        &lt;/ion-card-content&gt;
+      &lt;/ion-col&gt;
+ 
+      &lt;ion-col&gt;
+        &lt;ion-card-content style&#x3D;&quot;text-align:right;&quot;&gt;
+          60%
+         &lt;/ion-card-content&gt;
+       &lt;/ion-col&gt;
+     &lt;/ion-row&gt;
+   
+
+    &lt;ion-item&gt;
+      &lt;ion-range min&#x3D;&quot;1500&quot; max&#x3D;&quot;2000&quot; step&#x3D;&quot;100&quot; value&#x3D;&quot;1400&quot; snaps color&#x3D;&quot;danger&quot;&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+  &lt;/ion-grid&gt;
+  &lt;/ion-card&gt;
+
+
+
+&lt;/ion-content&gt;
+
+
+&lt;ion-footer&gt;&lt;ion-toolbar&gt;
+  &lt;ion-tab-button class&#x3D;&quot;exit&quot; tab&#x3D;&quot;schedule&quot; slot&#x3D;&quot;start&quot; routerLink&#x3D;&quot;/login&quot;&gt;
+    &lt;ion-icon color&#x3D;&quot;secondary&quot; name&#x3D;&quot;log-out-outline&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-label&gt;Exit&lt;/ion-label&gt;
+  &lt;/ion-tab-button&gt;
+
+  &lt;ion-tab-button tab&#x3D;&quot;about&quot; slot&#x3D;&quot;end&quot;&gt;
+    &lt;ion-icon color&#x3D;&quot;secondary&quot;  name&#x3D;&quot;chatbubbles-outline&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-label&gt;Vote&lt;/ion-label&gt;
+  &lt;/ion-tab-button&gt;
+
+&lt;/ion-toolbar&gt;&lt;/ion-footer&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>home.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+ion-card-header{
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #35BEB6;
+}
+ion-menu-button {
+  color: white;
+  float: left;
+  width: unset;
+  font-size: 2em;
+  margin-top: 0.3em;
+  margin-left: 0.3em;
+}
+ion-fab{
+  margin-left: 38%;
+}
+.row{
+  height: 20px;
+}
+.row1{
+  height: 20px;
+}
+.row2{
+  padding: 0%;
+}
+.new{
+  padding-left: 0%;
+}
+ion-card-content{
+ padding: 0%;
+ padding-left: 15%;
+ padding-right: 15%;
+}
+// ion-fab{
+//   margin-top: 0px !important;
+//   margin-left: 2px;
+  
+// }
+.fab{
+  margin-left: 0%;
+  margin-top: 0%;
+
+}
+ion-card-title{
+  width: unset;
+}
+ion-fab-button{
+  margin-left: 0%;
+}
+ion-fab{
+  margin-left: -8%;
+  margin-right: -50%;
+ 
+}
+ion-fab .fab-list-active .fab-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(100, 100, 100, 0.5);
+}
+.values{
+  padding: 0%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header [translucent]="true">  <ion-toolbar color="primary">    <ion-menu-button menu="main-menu"></ion-menu-button>    <ion-title>Area/Roskilde</ion-title>  </ion-toolbar></ion-header><ion-content  fullscreen scrollX="false" scrollY="false" ><ion-card>    <ion-card-header>      <ion-card-title>Outdoor climate</ion-card-title>    </ion-card-header>  <ion-row class="row">      <ion-col>        <ion-card-content>Temperature</ion-card-content>      </ion-col>    <ion-col>        <ion-card-content>30° C</ion-card-content>      </ion-col>   </ion-row> <ion-row >    <ion-col>      <ion-card-content>        Humidity      </ion-card-content>    </ion-col>    <ion-col>      <ion-card-content>        60%       </ion-card-content>     </ion-col>   </ion-row>  </ion-card>  <ion-card>    <ion-grid>    <ion-card-header>      <ion-card-title>Indoor climate</ion-card-title>    </ion-card-header>      <ion-row class="row1">        <ion-col>          <ion-card-content>            Temperature          </ion-card-content>        </ion-col>        <ion-col>          <ion-card-content style="text-align:right;">            24° C          </ion-card-content>        </ion-col>     </ion-row>     <ion-row class="row1">      <ion-col>        <ion-card-content>          Ventilation        </ion-card-content>      </ion-col>      <ion-col>        <ion-card-content style="text-align:right;">          3        </ion-card-content>      </ion-col>   </ion-row>    <ion-row>     <ion-col>       <ion-card-content>         Humidity       </ion-card-content>     </ion-col>     <ion-col>       <ion-card-content style="text-align:right;">         60%        </ion-card-content>      </ion-col>    </ion-row>    </ion-grid>  </ion-card>  <ion-card>    <ion-grid>    <ion-card-header>     <ion-card-title>Preset</ion-card-title>     <ion-fab>      <ion-fab-button color="secondary">           <ion-icon name="star-outline"></ion-icon>        </ion-fab-button>        <ion-fab-list side="top">          <div class="fab-backdrop"></div>          <ion-fab-button>N</ion-fab-button>        </ion-fab-list>        <div class="fab-backdrop"></div>        <ion-fab-list side="start">          <ion-fab-button>C</ion-fab-button>        </ion-fab-list>        <div class="fab-backdrop"></div>        <ion-fab-list side="end">           <ion-fab-button>H</ion-fab-button>         </ion-fab-list>                  </ion-fab>    </ion-card-header>      <ion-row class="ion-align-items-center">      <ion-col>        <ion-card-content>          Temperature        </ion-card-content>      </ion-col>       <ion-card-content style="text-align:right;">        22° C</ion-card-content>        </ion-row>    <ion-item>      <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">      </ion-range>    </ion-item>    <ion-row >      <ion-col>        <ion-card-content>          Ventilation        </ion-card-content>      </ion-col>      <ion-col>        <ion-card-content style="text-align:right;">          3        </ion-card-content>      </ion-col>   </ion-row>    <ion-item>      <ion-range min="1500" max="2000" step="150" value="1400" snaps color="danger">      </ion-range>    </ion-item>    <ion-row>      <ion-col>        <ion-card-content>          Humidity        </ion-card-content>      </ion-col>       <ion-col>        <ion-card-content style="text-align:right;">          60%         </ion-card-content>       </ion-col>     </ion-row>       <ion-item>      <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">      </ion-range>    </ion-item>  </ion-grid>  </ion-card></ion-content><ion-footer><ion-toolbar>  <ion-tab-button class="exit" tab="schedule" slot="start" routerLink="/login">    <ion-icon color="secondary" name="log-out-outline"></ion-icon>    <ion-label>Exit</ion-label>  </ion-tab-button>  <ion-tab-button tab="about" slot="end">    <ion-icon color="secondary"  name="chatbubbles-outline"></ion-icon>    <ion-label>Vote</ion-label>  </ion-tab-button></ion-toolbar></ion-footer></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InputComponent', 'selector': 'app-input'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'QuickTourPage', 'selector': 'app-quick-tour'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'TourStartPage', 'selector': 'app-tour-start'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomePage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomePage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

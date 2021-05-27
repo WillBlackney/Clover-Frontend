@@ -1,0 +1,321 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Clover_Frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Clover_Frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>app.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/app.component.ts:8</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-root&#x27;,
+  templateUrl: &#x27;app.component.html&#x27;,
+  styleUrls: [&#x27;app.component.scss&#x27;],
+})
+export class AppComponent {
+constructor() {}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-app color&#x3D;&quot;primary&quot;&gt;
+  &lt;ion-menu menuId&#x3D;&quot;main-menu&quot; content-id&#x3D;&quot;main&quot; color&#x3D;&quot;primary&quot;&gt;
+    &lt;ion-header class&#x3D;&quot;burger&quot;&gt;
+      &lt;ion-toolbar class&#x3D;&quot;inner-toolbar&quot;&gt;
+      &lt;/ion-toolbar&gt;
+    &lt;/ion-header&gt;
+    &lt;ion-content color&#x3D;&quot;primary&quot;&gt;
+      &lt;ion-list color&#x3D;&quot;primary&quot; lines &#x3D; none&gt;
+        &lt;ion-menu-toggle color&#x3D;&quot;light&quot;&gt;
+          &lt;ion-item color&#x3D;&quot;primary&quot;&gt;
+            &lt;ion-icon name&#x3D;&quot;settings&quot;&gt;&lt;/ion-icon&gt;
+            &lt;ion-button  type&#x3D;&quot;button&quot; expand&#x3D;&quot;block&quot; color&#x3D;&quot;light&quot; fill&#x3D;&quot;clear&quot;&gt;Terms &amp; Conditions&lt;/ion-button&gt;
+          &lt;/ion-item&gt;
+        &lt;/ion-menu-toggle&gt;
+          &lt;ion-menu-toggle&gt;
+            &lt;ion-item color&#x3D;&quot;primary&quot;&gt;
+              &lt;ion-icon name&#x3D;&quot;person&quot;&gt;&lt;/ion-icon&gt;
+              &lt;ion-button  type&#x3D;&quot;button&quot; expand&#x3D;&quot;block&quot; color&#x3D;&quot;light&quot; fill&#x3D;&quot;clear&quot;&gt;About Us&lt;/ion-button&gt;
+            &lt;/ion-item&gt;
+          &lt;/ion-menu-toggle&gt;
+          &lt;ion-menu-toggle&gt;
+            &lt;ion-item color&#x3D;&quot;primary&quot;&gt;
+              &lt;ion-icon name&#x3D;&quot;star&quot;&gt;&lt;/ion-icon&gt;
+              &lt;ion-button routerLink&#x3D;&quot;/login&quot; type&#x3D;&quot;button&quot; expand&#x3D;&quot;block&quot; color&#x3D;&quot;light&quot; fill&#x3D;&quot;clear&quot;&gt;Give Feedback&lt;/ion-button&gt;
+            &lt;/ion-item&gt;
+          &lt;/ion-menu-toggle&gt;
+          &lt;ion-menu-toggle&gt;
+            &lt;ion-item color&#x3D;&quot;primary&quot;&gt;
+              &lt;ion-icon name&#x3D;&quot;flag&quot;&gt;&lt;/ion-icon&gt; 
+              &lt;ion-button routerLink&#x3D;&quot;/quick-tour&quot; type&#x3D;&quot;button&quot; expand&#x3D;&quot;block&quot; color&#x3D;&quot;light&quot; fill&#x3D;&quot;clear&quot;&gt;Take a Tour&lt;/ion-button&gt;
+
+            &lt;/ion-item&gt;
+          &lt;/ion-menu-toggle&gt;
+        &lt;/ion-list&gt;
+    &lt;/ion-content&gt;
+  &lt;/ion-menu&gt;
+  &lt;ion-router-outlet id&#x3D;&quot;main&quot;&gt;&lt;/ion-router-outlet&gt;
+&lt;/ion-app&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>app.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.inner-toolbar{
+    color: rgb(245, 244, 244) !important;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+ion-list {
+    background: #35BEB6;  
+}
+
+ion-toolbar{
+
+    --background:#35BEB6 ;
+}
+
+.inner-text {
+    margin-left: 0.6rem;
+}
+ion-button{
+    font-size: inherit;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-app color="primary">  <ion-menu menuId="main-menu" content-id="main" color="primary">    <ion-header class="burger">      <ion-toolbar class="inner-toolbar">      </ion-toolbar>    </ion-header>    <ion-content color="primary">      <ion-list color="primary" lines = none>        <ion-menu-toggle color="light">          <ion-item color="primary">            <ion-icon name="settings"></ion-icon>            <ion-button  type="button" expand="block" color="light" fill="clear">Terms & Conditions</ion-button>          </ion-item>        </ion-menu-toggle>          <ion-menu-toggle>            <ion-item color="primary">              <ion-icon name="person"></ion-icon>              <ion-button  type="button" expand="block" color="light" fill="clear">About Us</ion-button>            </ion-item>          </ion-menu-toggle>          <ion-menu-toggle>            <ion-item color="primary">              <ion-icon name="star"></ion-icon>              <ion-button routerLink="/login" type="button" expand="block" color="light" fill="clear">Give Feedback</ion-button>            </ion-item>          </ion-menu-toggle>          <ion-menu-toggle>            <ion-item color="primary">              <ion-icon name="flag"></ion-icon>               <ion-button routerLink="/quick-tour" type="button" expand="block" color="light" fill="clear">Take a Tour</ion-button>            </ion-item>          </ion-menu-toggle>        </ion-list>    </ion-content>  </ion-menu>  <ion-router-outlet id="main"></ion-router-outlet></ion-app></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InputComponent', 'selector': 'app-input'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'QuickTourPage', 'selector': 'app-quick-tour'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SignupPage', 'selector': 'app-signup'},{'name': 'TourStartPage', 'selector': 'app-tour-start'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

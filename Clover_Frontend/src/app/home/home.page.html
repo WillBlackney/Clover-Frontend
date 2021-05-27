@@ -93,7 +93,7 @@
      <ion-card-title>Preset</ion-card-title>
      <ion-fab>
       <ion-fab-button color="secondary">
-           <ion-icon name="star-outline"></ion-icon>
+           <ion-icon name="options-outline"></ion-icon>
         </ion-fab-button>
         <ion-fab-list side="top">
           <div class="fab-backdrop"></div>
@@ -123,7 +123,7 @@
 </ion-card-content>
     
     </ion-row>
-    <ion-item>
+    <ion-item lines="none">
       <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
@@ -142,7 +142,7 @@
       </ion-col>
    </ion-row>
 
-    <ion-item>
+    <ion-item lines="none">
       <ion-range min="1500" max="2000" step="150" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
@@ -162,7 +162,7 @@
      </ion-row>
    
 
-    <ion-item>
+    <ion-item lines="none">
       <ion-range min="1500" max="2000" step="100" value="1400" snaps color="danger">
       </ion-range>
     </ion-item>
@@ -175,7 +175,7 @@
 
 
 <ion-footer><ion-toolbar>
-  <ion-tab-button class="exit" tab="schedule" slot="start" routerLink="/login">
+  <ion-tab-button class="exit" tab="schedule" slot="start" (click)="showConfirm()">
     <ion-icon color="secondary" name="log-out-outline"></ion-icon>
     <ion-label>Exit</ion-label>
   </ion-tab-button>
