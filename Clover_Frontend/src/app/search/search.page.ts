@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -18,7 +19,7 @@ export class SearchPage implements OnInit {
 
   public islandArray = [];
 
-  constructor(public httpClient: HttpClient) {
+  constructor(public httpClient: HttpClient, private route:ActivatedRoute, private router:Router) {
 
     this.islands = this.httpClient.get('http://localhost:3000/island');
 
@@ -60,6 +61,7 @@ export class SearchPage implements OnInit {
 
     if(foundMatch){
       // connect and route to home page
+      this.router.navigate(['/home']);
       console.log('foundMatch = true, route to home page');
 
        // TO DO: CODE FOR HANDLING ROUTE TO HOME PAGE
