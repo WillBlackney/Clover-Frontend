@@ -67,11 +67,13 @@ export class SearchPage implements OnInit {
        // TO DO: CODE FOR HANDLING ROUTE TO HOME PAGE
     }
     else{
-      
-      let errorMessage = 'Not found the table!';
+      console.log('foundMatch = false, do error pop up');
+       // didnt find a match, show error screen
+      let errorMessage = 'Could not find a maching table!';
+      window.alert(errorMessage);
       return throwError(errorMessage);
       // didnt find a match, show error screen
-      console.log('foundMatch = false, do error pop up');
+      
 
       // TO DO: CODE FOR HANDLING POP UP ERROR MESSAGE
     }

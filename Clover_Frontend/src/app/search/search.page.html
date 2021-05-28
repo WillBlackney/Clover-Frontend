@@ -15,8 +15,8 @@
     in the search bar.</h1>
 
     <form >
-      <ion-searchbar
-      (search)="searchForIsland($event.target.value)"
+      <ion-searchbar id = "search-bar"
+      (search)="searchForIsland($any($event.target).value)"
          showCancelButton="focus"
          >
       </ion-searchbar>
